@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{AB9015E2-0093-44EE-A5A8-0F546E10AF3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{F773C2CD-7FC0-49AC-8DF1-97C7AC87D2B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Catalog.API", "UdemyNewMicroservice.Catalog.API\UdemyNewMicroservice.Catalog.API.csproj", "{3911E3DC-F845-4DD8-9340-DA53BCAACEF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB9015E2-0093-44EE-A5A8-0F546E10AF3E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F773C2CD-7FC0-49AC-8DF1-97C7AC87D2B8} = {AB9015E2-0093-44EE-A5A8-0F546E10AF3E}
+		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7} = {F773C2CD-7FC0-49AC-8DF1-97C7AC87D2B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACEACBCE-F11F-46F2-9734-6956E1300ECE}
+	EndGlobalSection
+EndGlobal
