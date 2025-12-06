@@ -1,12 +1,14 @@
 using UdemyNewMicroservice.Catalog.API.Options;
+using UdemyNewMicroservice.Catalog.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddOptionsExtension();
+builder.Services.AddDatabaseServiceExtension();
+
 
 var app = builder.Build();
 

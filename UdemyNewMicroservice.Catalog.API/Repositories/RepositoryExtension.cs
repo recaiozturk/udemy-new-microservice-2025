@@ -1,0 +1,27 @@
+﻿using MongoDB.Driver;
+using UdemyNewMicroservice.Catalog.API.Options;
+
+namespace UdemyNewMicroservice.Catalog.API.Repositories
+{
+    public static class RepositoryExtension
+    {
+        public static IServiceCollection AddDatabaseServiceExtension(this IServiceCollection services)
+        {
+            services.AddSingleton(sp =>
+            {
+                var options = sp.GetRequiredService<MongoOption>();
+                return new MongoClient(options.ConnectionString);
+            });
+
+            services.AddScoped<AppDbContext>(sp =>
+            {
+                var mongoClient = sp.GetRequiredService<IMongoClient>();
+                var options = sp.GetRequiredService<MongoOption>();
+
+                return AppDbContext.Create(mongoClient.GetDatabase(options.DatabaseName));
+            });
+
+            return services;
+        }
+    }
+}
