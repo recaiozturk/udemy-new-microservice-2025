@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Catalo
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{50F3F1E0-CB84-423A-A43C-D79EB510D307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyNewMicroservice.Shared", "UdemyNewMicroservice.Shared\UdemyNewMicroservice.Shared.csproj", "{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +43,8 @@ Global
 		{AB9015E2-0093-44EE-A5A8-0F546E10AF3E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F773C2CD-7FC0-49AC-8DF1-97C7AC87D2B8} = {AB9015E2-0093-44EE-A5A8-0F546E10AF3E}
 		{3911E3DC-F845-4DD8-9340-DA53BCAACEF7} = {F773C2CD-7FC0-49AC-8DF1-97C7AC87D2B8}
+		{50F3F1E0-CB84-423A-A43C-D79EB510D307} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3E14D3B9-C4FD-4A14-ACC5-6D9880BF6161} = {50F3F1E0-CB84-423A-A43C-D79EB510D307}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACEACBCE-F11F-46F2-9734-6956E1300ECE}
