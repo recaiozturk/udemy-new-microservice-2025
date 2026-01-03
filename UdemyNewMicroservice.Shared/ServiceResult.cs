@@ -97,7 +97,7 @@ namespace UdemyNewMicroservice.Shared
                         PropertyNameCaseInsensitive = true
                     });
 
-            return new ServiceResult
+            return new ServiceResult()
             {
                 Status = exception.StatusCode,
                 Fail = problemDetails

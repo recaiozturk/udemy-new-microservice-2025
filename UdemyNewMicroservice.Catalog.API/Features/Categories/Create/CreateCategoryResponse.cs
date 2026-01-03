@@ -1,4 +1,4 @@
 ﻿namespace UdemyNewMicroservice.Catalog.API.Features.Categories.Create
 {
-    public record CreateCategoryResponse(int id);
+    public record CreateCategoryResponse(Guid id);
 }
