@@ -7,7 +7,7 @@ namespace UdemyNewMicroservice.Catalog.API.Repositories
     {
         public static IServiceCollection AddDatabaseServiceExtension(this IServiceCollection services)
         {
-            services.AddSingleton(sp =>
+            services.AddSingleton<IMongoClient, MongoClient>(sp =>
             {
                 var options = sp.GetRequiredService<MongoOption>();
                 return new MongoClient(options.ConnectionString);

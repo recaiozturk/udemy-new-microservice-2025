@@ -1,9 +1,8 @@
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
+using UdemyNewMicroservice.Catalog.API;
 using UdemyNewMicroservice.Catalog.API.Features.Categories;
-using UdemyNewMicroservice.Catalog.API.Features.Categories.Create;
 using UdemyNewMicroservice.Catalog.API.Options;
 using UdemyNewMicroservice.Catalog.API.Repositories;
+using UdemyNewMicroservice.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +11,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddOptionsExtension();
 builder.Services.AddDatabaseServiceExtension();
+builder.Services.AddCommonServices(typeof(CatalogAssambly));
 
 
 var app = builder.Build();
