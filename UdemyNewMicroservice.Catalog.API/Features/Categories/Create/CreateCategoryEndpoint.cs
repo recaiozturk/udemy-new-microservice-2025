@@ -1,6 +1,6 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
 using UdemyNewMicroservice.Shared.Extensions;
+using UdemyNewMicroservice.Shared.Filters;
 
 namespace UdemyNewMicroservice.Catalog.API.Features.Categories.Create
 {
@@ -13,7 +13,9 @@ namespace UdemyNewMicroservice.Catalog.API.Features.Categories.Create
                 var result = await mediator.Send(command);
                 return result.ToGenericResult();
             });
-            
+
+            group.AddEndpointFilter<ValidationFilter<CreateCategoryCommand>>(); //CreateCategoryCommand ı validate et
+
             return group;
         }
     }
